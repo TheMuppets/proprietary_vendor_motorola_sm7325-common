@@ -32,7 +32,7 @@
 
 function configure_zram_parameters() {
 	# Moto yangbq2: Skip this if we are using zram from fstab.
-	using_zram_from_fstab=`getprop ro.boot.using_zram_from_fstab`
+	using_zram_from_fstab=`getprop ro.vendor.zram.swapon`
 	if [ "$using_zram_from_fstab" == "true" ]; then
 		return
 	fi
