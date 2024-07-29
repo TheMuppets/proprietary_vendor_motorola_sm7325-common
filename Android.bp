@@ -15421,31 +15421,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "mbm_spy",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/mbm_spy",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "mlid",
     owner: "motorola",
     target: {
