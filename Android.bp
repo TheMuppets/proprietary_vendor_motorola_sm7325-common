@@ -16172,6 +16172,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libqmi_common_so",
                 "libqmi_cci",
+                "libthermalclient",
                 "libc++",
                 "libc",
                 "libm",
@@ -16180,7 +16181,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     strip: {
         none: true,
     },
