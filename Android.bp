@@ -15732,37 +15732,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "qcom-system-daemon",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qcom-system-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libdiag",
-                "libxml2",
-                "libsubsystem_control",
-                "libavservices_minijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "qdcmss",
     owner: "motorola",
     target: {
