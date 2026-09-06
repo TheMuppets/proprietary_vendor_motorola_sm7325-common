@@ -813,7 +813,6 @@ PRODUCT_PACKAGES += \
     port-bridge \
     power_off_alarm \
     ppd \
-    qcom-system-daemon \
     qdcmss \
     qmi_motext_hook \
     qmipriod \
